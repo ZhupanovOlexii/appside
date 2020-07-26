@@ -1,13 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dia</title>
+    <title>Потрать всего 5 минут</title>
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <h1>Dia</h1>
+    <header class="header">
+      <div class="header__logo">
+        <img
+        class="header__img"
+        src="./images/main-logo.png"
+        alt="logo">
+      </div>
+      <h1 class="header__title">
+        Торопись и проходи абсолютно бесплатную регистрацию и начни жить лучше уже сегодня!
+      </h1>
+    </header>
+
+    <div class="video">
+      <video
+        class="video__container"
+        controls muted
+        width="970" height="545"
+        src="./video/main-video.mp4"
+        type="video/mp4">
+      </video>
+    </div>
+
+    <div class="volume"
+      onclick="document.querySelector('video').muted = false;
+      this.style.display = 'none'">
+      <div class="volume--container">
+        <img
+          class="volume--img"
+          src="./images/volume.svg"
+          alt="volume">
+        <p class="volume--text">включить звук</p>
+      </div>
+    </div>
+
+    <div class="input">
+      <div class="input__container">
+        <div class="input__item">
+          <input
+            class="input__item--name"
+            type="text"
+            placeholder="Ваше имя">
+        </div>
+        <div class="input__item">
+          <input
+          class="input__item--mail"
+          type="text"
+          placeholder="Ваш актуальний e-m">
+        </div>
+      </div>
+    </div>
+
+    <div class="logos">
+      <li class="logos__item">
+        <img
+          class="logos--img"
+          src="./images/footer-item-one.png"
+          alt="kaspersky">
+      </li>
+      <li class="logos__item">
+        <img
+          class="logos--img"
+          src="./images/footer-item-two.png"
+          alt="version">
+      </li>
+      <li class="logos__item">
+        <img
+          class="logos--img"
+          src="./images/footer-item-three.png"
+          alt="geotrusr">
+      </li>
+      <li class="logos__item">
+        <img
+          class="logos--img"
+          src="./images/footer-item-four.png"
+          alt="money">
+      </li>
+      <li class="logos__item">
+        <img
+          class="logos--img"
+          src="./images/footer-item-five.png"
+          alt="guarantee">
+      </li>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <a
+          href="https://obsachfebeadelo.ru/policy.html"
+          class="footer__text footer__text--link">
+          Политика конфиденциальности
+        </a>
+        <a
+          href="https://obsachfebeadelo.ru/agreement.html"
+          class="footer__text footer__text--link">
+          Пользовательськое соглашение!
+        </a>
+      </div>
+      <p class="footer__text">Copyright ©2020-Общее дело</p>
+    </footer>
+
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
