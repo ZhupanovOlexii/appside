@@ -1,2 +1,2 @@
 
-  [DEMO LINK](https://zhupanovolexii.github.io/apside/)
+  [DEMO LINK](https://zhupanovolexii.github.io/appside/)
