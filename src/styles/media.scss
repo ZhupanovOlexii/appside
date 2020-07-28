@@ -1,0 +1,45 @@
+.video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    border: 2px solid white;
+  }
+}
+
+.volume {
+  position: absolute;
+  top: 30%;
+  left: calc(50% - 150px / 2);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  border-radius: 10px;
+  opacity: 0.5;
+  height: 150px;
+  width: 150px;
+  padding: 10px;
+  animation-name: volume;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--container {
+    text-align: center;
+  }
+
+  &--img {
+    width: 120px;
+  }
+
+  &--text {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+  }
+}

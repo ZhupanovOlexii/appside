@@ -1,0 +1,60 @@
+.statistics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__looking {
+    position: fixed;
+    top: 89%;
+    display: flex;
+    background-color: #15d61e;
+    width: 170px;
+    border-radius: 50px;
+    padding: 10px;
+    z-index: 2;
+
+    &--value {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #053607;
+      color: #fff;
+      padding: 5px;
+      border-radius: 50%;
+      font-size: 26px;
+      font-weight: bold;
+      width: 50px;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    color: #fff;
+    margin-left: 10px;
+  }
+
+  &__stay {
+    position: fixed;
+    right: 0;
+    top: 89%;
+    display: flex;
+    background-color: #1eacf5;
+    width: 170px;
+    border-radius: 50px;
+    padding: 10px;
+    z-index: 2;
+
+    &--value {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #132752;
+      color: #fff;
+      padding: 5px;
+      border-radius: 50%;
+      font-size: 26px;
+      font-weight: bold;
+      width: 70px;
+    }
+  }
+}
